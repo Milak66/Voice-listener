@@ -1,0 +1,64 @@
+.app {
+    display: grid;
+    grid-template-rows: 70vh 30vh;
+}
+
+.settings {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://static.vecteezy.com/system/resources/previews/005/152/375/non_2x/modern-futuristic-neon-purple-background-free-vector.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.logoImg {
+    width: 20vw;
+    height: 15vw;
+    border-radius: 3vw;
+}
+
+.textPlace {
+    width: 100vw;
+    background-color: black;
+    overflow: auto;
+}
+
+.text {
+    text-align: center;
+    word-wrap: break-word; 
+}
+
+.sentence {
+    font-size: 1.5vw;
+    margin-left: 0.5vw;
+    margin-right: 0.5vw;
+    margin-top: 1vw; 
+    padding: 0.5vw;
+    color: white;
+    background-color: rgb(150, 0, 150);
+    border-radius: 3vw;
+}
+
+@media all and (max-width: 768px) {
+
+    .app {
+        display: grid;
+        grid-template-rows: 80vh 20vh;
+    }    
+
+    .logoImg {
+        width: 35vw;
+        height: 25vw;
+        border-radius: 3vw;
+    }
+
+    .sentence {
+        font-size: 4.5vw;
+        margin-left: 1vw;
+        margin-right: 1vw;
+        margin-top: 4vw; 
+        padding: 1vw;
+        border-radius: 4vw;
+    }
+}

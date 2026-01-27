@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useRef } from "react";
 import './App.css';
 import AlekseyLogo from '../../assets/AlekseyLogo.png';
 
@@ -8,13 +8,6 @@ const App: React.FC<AppProps> = () => {
     const [isRecording, setIsRecording] = useState(false);
     const [wholeText, setWholeText] = useState<string[]>([]);
     const recognitionRef = useRef<any>(null);
-
-    useEffect(() => {
-        const appDiv = document.querySelector('.app') as HTMLDivElement;
-        if (appDiv) {
-            appDiv.style.height = window.innerHeight + 'px';
-        }
-    }, []);
 
     const startRecognition = () => {
         const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;

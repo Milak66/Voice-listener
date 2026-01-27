@@ -1,5 +1,6 @@
 .app {
     display: grid;
+    min-height: 100vh;
     grid-template-rows: 70vh 30vh;
     background-image: url(../../assets/d914043a1becd2196c66f628275d64bb.jpg);
     background-size: cover;

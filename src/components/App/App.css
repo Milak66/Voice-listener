@@ -12,7 +12,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .logoImg {
@@ -49,12 +48,12 @@
 
     .app {
         display: grid;
-        grid-template-rows: 80vh 20vh;
+        grid-template-rows: 75vh 25vh;
     }    
 
     .logoImg {
-        width: 35vw;
-        height: 25vw;
+        width: 40vw;
+        height: 30vw;
         border-radius: 3vw;
     }
 

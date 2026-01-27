@@ -1,6 +1,6 @@
 .app {
     display: grid;
-    min-height: 100vh;
+    height: 100vh;
     grid-template-rows: 70vh 30vh;
     background-image: url(../../assets/d914043a1becd2196c66f628275d64bb.jpg);
     background-size: cover;
@@ -38,7 +38,7 @@
     margin-top: 1vw; 
     padding: 0.5vw;
     color: white;
-    background-image: url(https://static.vecteezy.com/system/resources/previews/005/152/375/non_2x/modern-futuristic-neon-purple-background-free-vector.jpg);
+    background-image: url(../../assets/modern-futuristic-neon-purple-background-free-vector.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 3vw;

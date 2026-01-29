@@ -6,7 +6,8 @@ interface AppProps {};
 
 const App: React.FC<AppProps> = () => {
     const [isRecording, setIsRecording] = useState(false);
-    const [wholeText, setWholeText] = useState<string[]>([]);
+    const [text, setText] = useState<string>('');
+    const [interimText, setInterimText] = useState<string>('');
     const recognitionRef = useRef<any>(null);
 
     const startRecognition = () => {
@@ -24,20 +25,16 @@ const App: React.FC<AppProps> = () => {
 
         recognition.onresult = (event: any) => {
             let interimTranscript = '';
-            let finalTranscript = '';
 
             for (let i = event.resultIndex; i < event.results.length; ++i) {
                 const transcript = event.results[i][0].transcript;
                 if (event.results[i].isFinal) {
-                    finalTranscript += transcript;
+                    setText(prev => prev + transcript + '');
                 } else {
                     interimTranscript += transcript;
                 }
             }
-
-            if (finalTranscript) {
-                setWholeText(prev => [...prev, finalTranscript]);
-            }
+            setInterimText(interimTranscript);
         };
 
         recognition.onend = () => {
@@ -74,9 +71,8 @@ const App: React.FC<AppProps> = () => {
         <div className="app">
             <div className="textPlace">
                 <p className="text">
-                    {wholeText.map((item, index) => (
-                        <div className="sentence" key={index}>{item}</div>
-                    ))}
+                    {text}
+                    <span className="interim">{interimText}</span>
                 </p>
             </div>
             <div className="settings">

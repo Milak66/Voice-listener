@@ -2,10 +2,9 @@
     display: grid;
     height: 100vh;
     grid-template-rows: 70vh 30vh;
-    background-image: url(../../assets/d914043a1becd2196c66f628275d64bb.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-image: url(/public/1616990082_11-p-fon-.jpeg);
 }
 
 .settings {
@@ -16,7 +15,6 @@
 
 .logoImg {
     width: 20vw;
-    height: 15vw;
     border-radius: 3vw;
 }
 
@@ -34,9 +32,7 @@
     margin-top: 1vw; 
     padding: 0.5vw;
     color: white;
-    background-image: url(../../assets/modern-futuristic-neon-purple-background-free-vector.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-color: rgb(150, 0, 150);
     border-radius: 3vw;
     word-wrap: break-word; 
 }
@@ -50,12 +46,10 @@
 
     .logoImg {
         width: 40vw;
-        height: 30vw;
         border-radius: 3vw;
     }
 
     .text {
-   
         font-size: 4.5vw;
         margin-left: 1vw;
         margin-right: 1vw;

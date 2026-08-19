@@ -1,4 +1,4 @@
-.app {
+/* .app {
     display: grid;
     height: 100vh;
     grid-template-rows: 70vh 30vh;
@@ -9,7 +9,7 @@
 
 .settings {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
 }
 
@@ -35,27 +35,6 @@
     background-color: rgb(150, 0, 150);
     border-radius: 3vw;
     word-wrap: break-word; 
-}
-
-.speakDiv {
-    display: flex;
-    width: 30vw;
-    gap: 1vw;
-}
-
-.input {
-    width: 25vw;
-    height: 10vw;
-    resize: none;
-}
-
-.btn {
-    width: 6vw;
-    height: 3vw;
-    font-size: 1.5vw;
-    background-color: rgb(150, 0, 150);
-    border: none;
-    border-radius: 3vw;
 }
 
 @media all and (max-width: 768px) {
@@ -102,4 +81,22 @@
         font-size: 5vw;
         border-radius: 6vw;
     }
+} */
+
+html,
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  background: black;
+}
+
+canvas {
+  display: block;
 }
